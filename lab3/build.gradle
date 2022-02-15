@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories{
+    mavenCentral()
+}
+
+dependenicies{
+    implementation 'org.apache.commons:commons-csv:1.8'
+}
+
+mainClassName = 'csci2020u.lab2.SimpleTest'
+version = '1.0'
+
+jar{
+    manifest{
+        attributes: 'Main-Class': mainClassName,
+        'Implementation-Title': 'Lab03'
+        'Implementation-Version': version
+            }
+}
