@@ -103,8 +103,6 @@ public class PieChartDisplay extends Application {
 
         primaryStage.setScene(scene);
 
-        primaryStage.setTitle("Lab 07");
-
         primaryStage.show();
 
     }
